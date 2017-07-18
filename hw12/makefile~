@@ -1,0 +1,9 @@
+all: hw1
+
+hw1: hw1.o
+	g++ hw1.o -o hw1
+hw1.cpp:
+	g++ -g -std=c++11 hw1.cpp
+
+clean:
+	rm *.o hw1

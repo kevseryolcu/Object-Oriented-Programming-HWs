@@ -1,0 +1,16 @@
+MOV R1, 2 ; 	R1 e 2 koyar
+MOV R2, 9 ; 	R2 ye 9 koyar
+MOV R4, 0 ; 	R4 e 0 koyar
+MOV R1, R3 ; 	R3 e R1 i kopyalar
+MOV R5, 0 ; 	R5 e 0 koyar
+ADD R5, R1 ; 	R5 i R1 ile toplar
+SUB R3, 1 ; 	R3 ten 1 cikarir, kendisini kendisi kadar toplamak icin. ex: 3^2 = 3+3+3
+JMP R3, 10 ; 	R3 0 a esitse 10. satira gider
+JMP 6;		Değilse 6. satira gider 
+ADD R4, R5 ; 	R3 0 a esitse bir sayinin karesi alinmistir ve bu sayi R4 e eklenir
+ADD R1, 1 ; 	R1 1 arttirilir 
+SUB R2, 1 ; 	R2 den 1 cikarilir
+JMP R2, 15 ; 	R2 0 a esitse 15. satira gider
+JMP 4;		Değilse 4. satira gider
+ADD R4, 1 ; 	1 in karesi 1 oldugundan 1 i en son ekler
+HLT ; 		Program biter, 1den 10 a kadar olan sayilarin karelerinin toplami R4 te toplanir
